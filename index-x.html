@@ -11,10 +11,10 @@
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
   <!-- Header / Hero -->
-  <header class="relative bg-transparent text-center py-20 px-6 shadow-md" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg'); background-size: cover; background-position: center;">
+  <header class="relative bg-transparent text-center py-12 px-4 shadow-md" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg'); background-size: cover; background-position: center;">
     <div class="relative z-10">
-      <img src="Peregrine Cyber.png" alt="Peregrine Cyber Logo" class="mx-auto mb-4 w-[20rem] md:w-[31.25rem]">
-      <h2 class="text-2xl font-semibold mb-6 text-white" style="font-family: 'Montserrat', sans-serif;">Your Co-Pilot for Small Business Security</h2>
+      <img src="Peregrine Cyber.png" alt="Peregrine Cyber Logo" class="mx-auto mb-2 w-[22rem] md:w-[31rem] lg:w-[500px]">
+      <h2 class="text-2xl font-semibold text-white -mt-1 mb-4" style="font-family: 'Montserrat', sans-serif;">Your Co-Pilot for Small Business Security</h2>
       <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation" target="_blank" class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">Schedule a Free Consultation</a>
     </div>
   </header>
@@ -36,8 +36,11 @@
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <!-- Foundation (Bronze) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;"><span class="text-2xl mr-2">🔰</span> Foundation</h3>
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
+          <span class="text-2xl mr-2">🔰</span> Foundation
+        </h3>
         <p class="ml-3 mb-4 font-semibold">Milestone: Establish Core Security Hygiene</p>
+        <p class="ml-3 mb-2">Ongoing support to build and manage your NIST and CIS-aligned security program, tailored for smaller businesses or those starting out. <em>Some examples below:</em></p>
         <ul class="list-disc ml-8 text-sm mb-4">
           <li>Monthly vulnerability reviews + mitigation guidance</li>
           <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
@@ -53,8 +56,11 @@
 
       <!-- Defense (Silver) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;"><span class="text-2xl mr-2">🛡️</span> Defense</h3>
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
+          <span class="text-2xl mr-2">🛡️</span> Defense
+        </h3>
         <p class="ml-3 mb-4 font-semibold">Milestone: Strengthen Protections and Detection</p>
+        <p class="ml-3 mb-2">Deeper support to build and manage your NIST and CIS-aligned security program, ideal for businesses needing more hands-on guidance. <em>Some examples below:</em></p>
         <ul class="list-disc ml-8 text-sm mb-4">
           <li>Bi-weekly vulnerability reviews + prioritized mitigation</li>
           <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
@@ -70,8 +76,11 @@
 
       <!-- Resilience (Gold) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;"><span class="text-2xl mr-2">🔄</span> Resilience</h3>
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
+          <span class="text-2xl mr-2">🔄</span> Resilience
+        </h3>
         <p class="ml-3 mb-4 font-semibold">Milestone: Mature and Sustain Your Security Program</p>
+        <p class="ml-3 mb-2">Comprehensive support to build and manage your NIST and CIS-aligned security program, perfect for larger or more complex businesses. <em>Some examples below:</em></p>
         <ul class="list-disc ml-8 text-sm mb-4">
           <li>Weekly vulnerability reviews + mitigation oversight</li>
           <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
@@ -88,30 +97,3 @@
       </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-teal-600 py-16 px-6 text-white">
-    <h2 class="text-2xl font-semibold text-white text-center mb-6" style="font-family: 'Montserrat', sans-serif;">Let’s Talk Security</h2>
-    <p class="text-white text-center mb-4">We’re based in Omaha, Nebraska, and understand the unique challenges small businesses face here—especially in industries like healthcare and professional services. Omaha’s tight-knit business community means we know the local risks—like confusing cybersecurity insurance questions and compliance specific to your business. Not sure what you need? Let’s talk through your goals and see if our services are a good fit. Security maturity takes time—progress depends on your goals and readiness.</p>
-    <form action="https://formsubmit.co/steve.weston@peregrine-cyber.com" method="POST" class="max-w-xl mx-auto grid gap-4">
-      <input type="hidden" name="_next" value="https://peregrine-cyber-site.pages.dev/thank-you.html">
-      <input type="hidden" name="_captcha" value="false">
-      <label for="name" class="text-sm">Name</label>
-      <input type="text" id="name" name="name" placeholder="Name" class="p-3 rounded text-black bg-white" required />
-      <label for="email" class="text-sm">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" class="p-3 rounded text-black bg-white" required />
-      <label for="company" class="text-sm">Company (optional)</label>
-      <input type="text" id="company" name="company" placeholder="Company (optional)" class="p-3 rounded text-black bg-white" />
-      <label for="message" class="text-sm">Message</label>
-      <textarea id="message" name="message" placeholder="Message" rows="4" class="p-3 rounded text-black bg-white" required></textarea>
-      <button type="submit" class="bg-white text-teal-600 font-semibold py-3 px-6 rounded hover:bg-slate-100">Send Us Your Questions</button>
-    </form>
-    <p class="text-white text-center mt-6">Or call us: <a href="tel:+14027399330" class="underline hover:text-teal-200">(402) 739-9330</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-slate-100 text-center text-gray-600 text-sm py-6">
-    © 2025 Peregrine Cyber. All rights reserved.
-  </footer>
-</body>
-</html>
