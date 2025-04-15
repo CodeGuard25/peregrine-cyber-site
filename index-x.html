@@ -10,22 +10,26 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
-
   <!-- Header / Hero -->
   <header class="relative bg-transparent text-center py-10 px-4 shadow-md"
-    style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg');
-           background-size: cover; background-position: center;">
+          style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg');
+                 background-size: cover; background-position: center;">
     <div class="relative z-10">
-      <!-- Adjusted margins to overlap tagline closer to the logo -->
-      <img src="Peregrine Cyber.png" alt="Peregrine Cyber Logo"
-           class="mx-auto w-[20rem] md:w-[30rem] lg:w-[500px] mb-0">
-      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mt-[-0.5rem] mb-2"
+      <!-- Keep the logo at 500px on large screens, smaller on mobile -->
+      <img src="Peregrine Cyber.png"
+           alt="Peregrine Cyber Logo"
+           class="mx-auto mb-0 w-[20rem] md:w-[30rem] lg:w-[500px]">
+
+      <!-- Bump the tagline closer by using a small negative margin -->
+      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mt-[-0.5rem] mb-3"
           style="font-family: 'Montserrat', sans-serif;">
         Your Co-Pilot for Small Business Security
       </h2>
 
-      <div class="mt-4">
-        <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation" target="_blank"
+      <!-- Button with a bit more spacing below the tagline -->
+      <div class="mt-2">
+        <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation"
+           target="_blank"
            class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">
           Schedule a Free Consultation
         </a>
@@ -45,8 +49,8 @@
     </p>
     <p class="mb-4">
       That’s where we come in. As your cybersecurity advisor, we partner with you to build and manage a security program that
-      fits your business. Using NIST and CIS frameworks, we turn complex standards into plain English, delivering practical steps
-      to protect your customer data or operations. We follow a 'trust but verify' approach to catch what might be missed.
+      fits your business. Using NIST and CIS frameworks, we turn complex standards into plain English, delivering practical
+      steps to protect your customer data or operations. We follow a 'trust but verify' approach to catch what might be missed.
     </p>
     <p class="text-center font-semibold mt-2">
       With Peregrine Cyber, you get a trusted co-pilot - guiding you with clarity, confidence, and a roadmap to lasting security.
@@ -70,7 +74,7 @@
       the best support.
     </p>
 
-    <!-- FIRST: Introductory Package on its own row -->
+    <!-- Single-row container for the Introductory Assessment -->
     <div class="max-w-7xl mx-auto mb-8">
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
@@ -93,7 +97,7 @@
       </div>
     </div>
 
-    <!-- THEN: The 3 Packages in columns -->
+    <!-- 3-column container for Foundation, Defense, Resilience -->
     <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
       <!-- Foundation (Bronze) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
@@ -115,7 +119,9 @@
           <li>Employee awareness training sessions</li>
           <li>Coordination with your IT/MSP for implementation</li>
         </ul>
-        <p class="text-sm mb-2 font-medium ml-3">Supported by: <strong>Bronze Package (10 hrs/month)</strong></p>
+        <p class="text-sm mb-2 font-medium ml-3">
+          Supported by: <strong>Bronze Package (10 hrs/month)</strong>
+        </p>
         <p class="text-sm italic font-bold ml-3">
           Outcome: “We’ve established a solid security foundation with core protections in place.”
         </p>
@@ -141,7 +147,9 @@
           <li>Expanded employee training sessions</li>
           <li>Coordination with your IT/MSP for implementation</li>
         </ul>
-        <p class="text-sm mb-2 font-medium ml-3">Supported by: <strong>Silver Package (16 hrs/month)</strong></p>
+        <p class="text-sm mb-2 font-medium ml-3">
+          Supported by: <strong>Silver Package (16 hrs/month)</strong>
+        </p>
         <p class="text-sm italic font-bold ml-3">
           Outcome: “We’ve strengthened our security program with added layers of protection and detection.”
         </p>
@@ -169,7 +177,9 @@
           <li>Policy review and development support + compliance mapping for your industry</li>
           <li>Coordination with your IT/MSP for implementation</li>
         </ul>
-        <p class="text-sm mb-2 font-medium ml-3">Supported by: <strong>Gold Package (24 hrs/month)</strong></p>
+        <p class="text-sm mb-2 font-medium ml-3">
+          Supported by: <strong>Gold Package (24 hrs/month)</strong>
+        </p>
         <p class="text-sm italic font-bold ml-3">
           Outcome: “Our security program is mature, auditable, and sustainable.”
         </p>
@@ -177,5 +187,6 @@
     </div>
   </section>
 
+  <!-- Contact Section + Footer, if applicable, goes here if you previously had it. -->
 </body>
 </html>
