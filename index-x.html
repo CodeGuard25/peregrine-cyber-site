@@ -16,19 +16,19 @@
           style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg');
                  background-size: cover; background-position: center;">
     <div class="relative z-10">
+      <!-- Keep the logo the same for phone layout -->
       <img src="Peregrine Cyber.png"
            alt="Peregrine Cyber Logo"
            class="mx-auto w-[20rem] md:w-[30rem] lg:w-[500px] mb-0">
-      <!-- Raise tagline further (increased negative margin) -->
-      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mt-[-1.5rem] mb-2"
+
+      <!-- Tagline: normal margin on phone, negative margin on md+ -->
+      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mt-0 md:mt-[-2rem] mb-3"
           style="font-family: 'Montserrat', sans-serif;">
         Your Co-Pilot for Small Business Security
       </h2>
 
-      <!-- Extra space below tagline -->
       <div class="mt-4">
-        <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation"
-           target="_blank"
+        <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation" target="_blank"
            class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">
           Schedule a Free Consultation
         </a>
@@ -38,9 +38,7 @@
 
   <!-- Mission Statement -->
   <section class="max-w-5xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold text-teal-600 mb-6" style="font-family: 'Montserrat', sans-serif;">
-      Our Mission
-    </h2>
+    <h2 class="text-2xl font-semibold text-teal-600 mb-6" style="font-family: 'Montserrat', sans-serif;">Our Mission</h2>
     <p class="mb-4">
       With over 30 years in IT and cybersecurity, we know how overwhelming security can feel for small businesses—especially
       without a dedicated tech team. You might rely on one person, an MSP, or handle it yourself, but sorting through tools,
@@ -74,10 +72,32 @@
       the best support.
     </p>
 
-    <!-- Three columns: Foundation (left), Middle (Intro top + Defense bottom), Resilience (right) -->
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
+    <!-- Single-row container for the Introductory Assessment -->
+    <div class="max-w-7xl mx-auto mb-8">
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
+            style="font-family: 'Montserrat', sans-serif;">
+          <span class="text-2xl mr-2">📋</span> Introductory Assessment
+        </h3>
+        <p class="ml-3 mb-4 font-semibold">Milestone: Get a Snapshot of Current Risks</p>
+        <p class="ml-3 mb-2">
+          A 2-hour consultation that includes a high-level walkthrough of your security posture using simplified
+          NIST CSF 2.0 categories and CIS benchmarks. We’ll help identify key gaps, answer questions, and
+          recommend next steps.
+        </p>
+        <ul class="list-disc ml-8 text-sm mb-4">
+          <li>Walkthrough of critical risk categories</li>
+          <li>Initial gap identification (based on discussion)</li>
+          <li>Basic recommendations and guidance</li>
+          <li>Recommendations for Bronze/Silver/Gold support</li>
+        </ul>
+        <p class="text-sm italic font-bold ml-3">Outcome: “We know where we stand and what’s next.”</p>
+      </div>
+    </div>
 
-      <!-- Foundation: left column -->
+    <!-- 3-column container for Foundation, Defense, Resilience -->
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <!-- Foundation (Bronze) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
             style="font-family: 'Montserrat', sans-serif;">
@@ -105,61 +125,35 @@
         </p>
       </div>
 
-      <!-- Middle: stacked Introductory (top) + Defense (bottom) -->
-      <div class="flex flex-col gap-8">
-        <!-- Introductory Assessment -->
-        <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-          <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-              style="font-family: 'Montserrat', sans-serif;">
-            <span class="text-2xl mr-2">📋</span> Introductory Assessment
-          </h3>
-          <p class="ml-3 mb-4 font-semibold">Milestone: Get a Snapshot of Current Risks</p>
-          <p class="ml-3 mb-2">
-            A 2-hour consultation that includes a high-level walkthrough of your security posture using simplified
-            NIST CSF 2.0 categories and CIS benchmarks. We’ll help identify key gaps, answer questions, and
-            recommend next steps.
-          </p>
-          <ul class="list-disc ml-8 text-sm mb-4">
-            <li>Walkthrough of critical risk categories</li>
-            <li>Initial gap identification (based on discussion)</li>
-            <li>Basic recommendations and guidance</li>
-            <li>Recommendations for Bronze/Silver/Gold support</li>
-          </ul>
-          <p class="text-sm italic font-bold ml-3">
-            Outcome: “We know where we stand and what’s next.”
-          </p>
-        </div>
-
-        <!-- Defense -->
-        <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-          <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-              style="font-family: 'Montserrat', sans-serif;">
-            <span class="text-2xl mr-2">🛡️</span> Defense
-          </h3>
-          <p class="ml-3 mb-4 font-semibold">Milestone: Strengthen Protections and Detection</p>
-          <p class="ml-3 mb-2">
-            Deeper support to build and manage your NIST and CIS-aligned security program, ideal for businesses
-            needing more hands-on guidance. <em>Some examples below:</em>
-          </p>
-          <ul class="list-disc ml-8 text-sm mb-4">
-            <li>Bi-weekly vulnerability reviews + prioritized mitigation</li>
-            <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
-            <li>Backup/recovery review</li>
-            <li>Email security audits + phishing awareness planning</li>
-            <li>Access control reviews (e.g., MFA expansion guidance)</li>
-            <li>Expanded employee training sessions</li>
-            <li>Coordination with your IT/MSP for implementation</li>
-          </ul>
-          <p class="text-sm mb-2 font-medium ml-3">
-            Supported by: <strong>Silver Package (16 hrs/month)</strong>
-          </p>
-          <p class="text-sm italic font-bold ml-3">
-            Outcome: “We’ve strengthened our security program with added layers of protection and detection.”
-          </p>
-        </div>
+      <!-- Defense (Silver) -->
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
+            style="font-family: 'Montserrat', sans-serif;">
+          <span class="text-2xl mr-2">🛡️</span> Defense
+        </h3>
+        <p class="ml-3 mb-4 font-semibold">Milestone: Strengthen Protections and Detection</p>
+        <p class="ml-3 mb-2">
+          Deeper support to build and manage your NIST and CIS-aligned security program, ideal for businesses
+          needing more hands-on guidance. <em>Some examples below:</em>
+        </p>
+        <ul class="list-disc ml-8 text-sm mb-4">
+          <li>Bi-weekly vulnerability reviews + prioritized mitigation</li>
+          <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
+          <li>Backup/recovery review</li>
+          <li>Email security audits + phishing awareness planning</li>
+          <li>Access control reviews (e.g., MFA expansion guidance)</li>
+          <li>Expanded employee training sessions</li>
+          <li>Coordination with your IT/MSP for implementation</li>
+        </ul>
+        <p class="text-sm mb-2 font-medium ml-3">
+          Supported by: <strong>Silver Package (16 hrs/month)</strong>
+        </p>
+        <p class="text-sm italic font-bold ml-3">
+          Outcome: “We’ve strengthened our security program with added layers of protection and detection.”
+        </p>
       </div>
 
-      <!-- Right Column: Resilience -->
+      <!-- Resilience (Gold) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
             style="font-family: 'Montserrat', sans-serif;">
@@ -191,7 +185,53 @@
     </div>
   </section>
 
-  <!-- Contact Section / Footer if you had them in previous code (not shown) -->
+  <!-- Contact Section (Re-added for your email form) -->
+  <section id="contact" class="bg-teal-600 py-16 px-6 text-white">
+    <h2 class="text-2xl font-semibold text-white text-center mb-6" style="font-family: 'Montserrat', sans-serif;">
+      Let’s Talk Security
+    </h2>
+    <p class="text-white text-center mb-4">
+      We’re based in Omaha, Nebraska, and understand the unique challenges small businesses face here—especially
+      in industries like healthcare and professional services. Omaha’s tight-knit business community means we
+      know the local risks—like confusing cybersecurity insurance questions and compliance specific to your
+      business. Not sure what you need? Let’s talk through your goals and see if our services are a good fit.
+      Security maturity takes time—progress depends on your goals and readiness.
+    </p>
 
+    <!-- FormSubmit-based email form -->
+    <form action="https://formsubmit.co/steve.weston@peregrine-cyber.com"
+          method="POST"
+          class="max-w-xl mx-auto grid gap-4">
+      <input type="hidden" name="_next" value="https://peregrine-cyber-site.pages.dev/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name" class="text-sm">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name"
+             class="p-3 rounded text-black bg-white" required />
+
+      <label for="email" class="text-sm">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email"
+             class="p-3 rounded text-black bg-white" required />
+
+      <label for="company" class="text-sm">Company (optional)</label>
+      <input type="text" id="company" name="company" placeholder="Company (optional)"
+             class="p-3 rounded text-black bg-white" />
+
+      <label for="message" class="text-sm">Message</label>
+      <textarea id="message" name="message" placeholder="Message" rows="4"
+                class="p-3 rounded text-black bg-white" required></textarea>
+
+      <button type="submit"
+              class="bg-white text-teal-600 font-semibold py-3 px-6 rounded hover:bg-slate-100">
+        Send Us Your Questions
+      </button>
+    </form>
+
+    <p class="text-white text-center mt-6">
+      Or call us: <a href="tel:+14027399330" class="underline hover:text-teal-200">(402) 739-9330</a>
+    </p>
+  </section>
+
+  <!-- Footer (if you had one) could go here -->
 </body>
 </html>
