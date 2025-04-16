@@ -16,6 +16,7 @@
           style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg');
                  background-size: cover; background-position: center;">
     <div class="relative z-10">
+      <!-- Logo -->
       <img src="Peregrine Cyber.png"
            alt="Peregrine Cyber Logo"
            class="mx-auto w-[20rem] md:w-[30rem] lg:w-[500px] mb-0">
@@ -26,7 +27,8 @@
         Your Co-Pilot for Small Business Security
       </h2>
 
-      <div class="mt-4">
+      <!-- One more space (mt-8) between tagline & button -->
+      <div class="mt-8">
         <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation"
            target="_blank"
            class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">
@@ -38,9 +40,7 @@
 
   <!-- Mission Statement -->
   <section class="max-w-5xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold text-teal-600 mb-6" style="font-family: 'Montserrat', sans-serif;">
-      Our Mission
-    </h2>
+    <h2 class="text-2xl font-semibold text-teal-600 mb-6" style="font-family: 'Montserrat', sans-serif;">Our Mission</h2>
     <p class="mb-4">
       With over 30 years in IT and cybersecurity, we know how overwhelming security can feel for small businesses—especially
       without a dedicated tech team. You might rely on one person, an MSP, or handle it yourself, but sorting through tools,
@@ -58,8 +58,7 @@
 
   <!-- Packages Section -->
   <section class="bg-white py-16 px-6 text-gray-700">
-    <h2 class="text-2xl font-semibold text-teal-600 text-center mb-12"
-        style="font-family: 'Montserrat', sans-serif;">
+    <h2 class="text-2xl font-semibold text-teal-600 text-center mb-12" style="font-family: 'Montserrat', sans-serif;">
       Cybersecurity Support Packages
     </h2>
     <p class="max-w-5xl mx-auto text-center mb-8">
@@ -74,12 +73,11 @@
       the best support.
     </p>
 
-    <!-- Row 1: Foundation (Left), Intro (Middle), Resilience (Right) -->
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start mb-8">
-      <!-- Foundation (Bronze) -->
+    <!-- Single row for Foundation, Intro, Resilience top-aligned -->
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start">
+      <!-- Foundation -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-            style="font-family: 'Montserrat', sans-serif;">
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
           <span class="text-2xl mr-2">🔰</span> Foundation
         </h3>
         <p class="ml-3 mb-4 font-semibold">Milestone: Establish Core Security Hygiene</p>
@@ -104,33 +102,61 @@
         </p>
       </div>
 
-      <!-- Introductory (Middle) -->
-      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-            style="font-family: 'Montserrat', sans-serif;">
-          <span class="text-2xl mr-2">📋</span> Introductory Assessment
-        </h3>
-        <p class="ml-3 mb-4 font-semibold">Milestone: Get a Snapshot of Current Risks</p>
-        <p class="ml-3 mb-2">
-          A 2-hour consultation that includes a high-level walkthrough of your security posture using simplified
-          NIST CSF 2.0 categories and CIS benchmarks. We’ll help identify key gaps, answer questions, and
-          recommend next steps.
-        </p>
-        <ul class="list-disc ml-8 text-sm mb-4">
-          <li>Walkthrough of critical risk categories</li>
-          <li>Initial gap identification (based on discussion)</li>
-          <li>Basic recommendations and guidance</li>
-          <li>Recommendations for Bronze/Silver/Gold support</li>
-        </ul>
-        <p class="text-sm italic font-bold ml-3">
-          Outcome: “We know where we stand and what’s next.”
-        </p>
+      <!-- Introductory in middle column top, Defense stacked below -->
+      <div class="flex flex-col gap-8">
+        <!-- Intro top -->
+        <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
+            <span class="text-2xl mr-2">📋</span> Introductory Assessment
+          </h3>
+          <p class="ml-3 mb-4 font-semibold">Milestone: Get a Snapshot of Current Risks</p>
+          <p class="ml-3 mb-2">
+            A 2-hour consultation that includes a high-level walkthrough of your security posture using simplified
+            NIST CSF 2.0 categories and CIS benchmarks. We’ll help identify key gaps, answer questions, and
+            recommend next steps.
+          </p>
+          <ul class="list-disc ml-8 text-sm mb-4">
+            <li>Walkthrough of critical risk categories</li>
+            <li>Initial gap identification (based on discussion)</li>
+            <li>Basic recommendations and guidance</li>
+            <li>Recommendations for Bronze/Silver/Gold support</li>
+          </ul>
+          <p class="text-sm italic font-bold ml-3">
+            Outcome: “We know where we stand and what’s next.”
+          </p>
+        </div>
+
+        <!-- Defense bottom -->
+        <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+          <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
+            <span class="text-2xl mr-2">🛡️</span> Defense
+          </h3>
+          <p class="ml-3 mb-4 font-semibold">Milestone: Strengthen Protections and Detection</p>
+          <p class="ml-3 mb-2">
+            Deeper support to build and manage your NIST and CIS-aligned security program, ideal for businesses
+            needing more hands-on guidance. <em>Some examples below:</em>
+          </p>
+          <ul class="list-disc ml-8 text-sm mb-4">
+            <li>Bi-weekly vulnerability reviews + prioritized mitigation</li>
+            <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
+            <li>Backup/recovery review</li>
+            <li>Email security audits + phishing awareness planning</li>
+            <li>Access control reviews (e.g., MFA expansion guidance)</li>
+            <li>Expanded employee training sessions</li>
+            <li>Coordination with your IT/MSP for implementation</li>
+          </ul>
+          <p class="text-sm mb-2 font-medium ml-3">
+            Supported by: <strong>Silver Package (16 hrs/month)</strong>
+          </p>
+          <p class="text-sm italic font-bold ml-3">
+            Outcome: “We’ve strengthened our security program with added layers of protection and detection.”
+          </p>
+        </div>
       </div>
 
       <!-- Resilience (Right) -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-            style="font-family: 'Montserrat', sans-serif;">
+        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left" style="font-family: 'Montserrat', sans-serif;">
           <span class="text-2xl mr-2">🔄</span> Resilience
         </h3>
         <p class="ml-3 mb-4 font-semibold">Milestone: Mature and Sustain Your Security Program</p>
@@ -157,46 +183,9 @@
         </p>
       </div>
     </div>
-
-    <!-- Row 2: Middle Column -> Defense, Blanks on left/right -->
-    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-      <!-- Empty left column -->
-      <div></div>
-
-      <!-- Defense in the middle -->
-      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-teal-600 mb-2 flex items-center text-left"
-            style="font-family: 'Montserrat', sans-serif;">
-          <span class="text-2xl mr-2">🛡️</span> Defense
-        </h3>
-        <p class="ml-3 mb-4 font-semibold">Milestone: Strengthen Protections and Detection</p>
-        <p class="ml-3 mb-2">
-          Deeper support to build and manage your NIST and CIS-aligned security program, ideal for businesses
-          needing more hands-on guidance. <em>Some examples below:</em>
-        </p>
-        <ul class="list-disc ml-8 text-sm mb-4">
-          <li>Bi-weekly vulnerability reviews + prioritized mitigation</li>
-          <li>Security tools review (e.g., EDR, SIEM, Firewall)</li>
-          <li>Backup/recovery review</li>
-          <li>Email security audits + phishing awareness planning</li>
-          <li>Access control reviews (e.g., MFA expansion guidance)</li>
-          <li>Expanded employee training sessions</li>
-          <li>Coordination with your IT/MSP for implementation</li>
-        </ul>
-        <p class="text-sm mb-2 font-medium ml-3">
-          Supported by: <strong>Silver Package (16 hrs/month)</strong>
-        </p>
-        <p class="text-sm italic font-bold ml-3">
-          Outcome: “We’ve strengthened our security program with added layers of protection and detection.”
-        </p>
-      </div>
-
-      <!-- Empty right column -->
-      <div></div>
-    </div>
   </section>
 
-  <!-- Contact Section (restored) -->
+  <!-- Contact Section -->
   <section id="contact" class="bg-teal-600 py-16 px-6 text-white">
     <h2 class="text-2xl font-semibold text-white text-center mb-6" style="font-family: 'Montserrat', sans-serif;">
       Let’s Talk Security
