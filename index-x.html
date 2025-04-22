@@ -3,11 +3,21 @@
 <head>
   <title>Peregrine Cyber | Small Business Cybersecurity & Advisor Services</title>
   <meta name="description" content="Peregrine Cyber helps small businesses build cybersecurity programs with clarity — from compliance to NIST and CIS guidance. Based in Omaha, NE." />
-  <meta name="keywords" content="cybersecurity, small business security, NIST CSF, CIS Controls, risk assessments, cybersecurity advisor, vendor risk, incident response, security policies, security program development, data protection, healthcare cybersecurity, cybersecurity consulting, security awareness training, backup reviews, endpoint protection, EDR, SIEM, firewall review, phishing prevention, agriculture cybersecurity, co-op IT security, Omaha cybersecurity, Nebraska cybersecurity" />
+  <meta name="keywords" content="cybersecurity, small business security, NIST CSF, CIS Controls, risk assessments, cybersecurity advisor, vendor risk, incident response, security policies, security program development, data protection, healthcare cybersecurity, cybersecurity consulting, security awareness training, backup reviews, endpoint protection, EDR, SIEM, firewall review, phishing prevention, agriculture cybersecurity, co-op IT security, Omaha cybersecurity, Nebraska cybersecurity, HIPAA, PII, PHI, PCI, FTC" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for mobile table labels */
+    .mobile-table-label::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 100px;
+      margin-right: 8px;
+    }
+  </style>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
   <!-- Header / Hero -->
@@ -51,7 +61,7 @@
       </div>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto align-top">
       <!-- Basic Hygiene -->
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2">Basic Hygiene</h3>
@@ -62,10 +72,11 @@
           <li>Backup configuration guidance</li>
           <li>Basic access and credential review</li>
           <li>Review of acceptable use and password policies</li>
-          <li>Monthly vulnerability reviews</li>
+          <li class="font-semibold text-teal-600">Monthly vulnerability reviews</li>
+          <li>Infrastructure Review</li>
           <li>Support for coordination with IT/MSP as needed</li>
         </ul>
-        <p class="text-sm italic">Aligns with CIS IG1 and NIST CSF Identify & Protect.</p>
+        <p class="text-sm italic mt-2">Aligns with CIS IG1 and NIST CSF Identify & Protect.</p>
       </div>
 
       <!-- Advanced Protection -->
@@ -79,9 +90,10 @@
           <li>Access management policy planning</li>
           <li>Email security audit</li>
           <li>Vendor risk management support</li>
+          <li class="font-semibold text-teal-600">Security Architecture Review</li>
           <li>Security reporting for internal use</li>
         </ul>
-        <p class="text-sm italic">Aligns with CIS IG2 and NIST CSF Detect & Respond.</p>
+        <p class="text-sm italic mt-2">Aligns with CIS IG2 and NIST CSF Detect & Respond.</p>
       </div>
 
       <!-- Sustained Resilience -->
@@ -91,44 +103,47 @@
         <ul class="list-disc ml-6 text-sm mb-4">
           <li>Includes Basic Hygiene + Advanced Protection plus:</li>
           <li>Support for written security policies</li>
-          <li>Compliance mapping (PHI & PII data, FTC, etc.)</li>
+          <li class="font-semibold text-teal-600">Compliance mapping (PHI - Protected Health Information & PII - Personally Identifiable Information, etc.)</li>
           <li>Incident response tabletop (annual)</li>
           <li>Testing coordination (e.g., pentest, phishing)</li>
           <li>Executive risk reporting</li>
           <li>Recurring policy and control review</li>
         </ul>
-        <p class="text-sm italic">Aligns with CIS IG3 and NIST CSF Respond & Recover.</p>
+        <p class="text-sm italic mt-2">Aligns with CIS IG3 and NIST CSF Respond & Recover.</p>
       </div>
     </div>
 
     <!-- Clarifying Note -->
     <p class="max-w-6xl mx-auto text-center mt-8 text-base font-semibold text-teal-600">Choose any Maturity Package for your security goals and a Support Plan for how much help you need. More hours mean faster progress, but all plans get you there.</p>
 
+    <!-- Support Plans Subheading -->
+    <p class="max-w-6xl mx-auto text-center mt-4 text-sm font-semibold">Select a Support Plan to customize your cybersecurity journey:</p>
+
     <!-- Support Plans Table -->
-    <div class="max-w-6xl mx-auto mt-8">
-      <table class="w-full border-collapse">
-        <thead>
-          <tr class="bg-teal-600 text-white">
+    <div class="max-w-6xl mx-auto mt-4">
+      <table class="block md:table w-full border-collapse">
+        <thead class="hidden md:table-header-group bg-teal-600 text-white">
+          <tr>
             <th class="p-3 text-left w-[25%] min-w-[100px]">Plan</th>
             <th class="p-3 text-left w-[30%] min-w-[150px]">Hours/Month (Recurring)</th>
             <th class="p-3 text-left w-[45%] min-w-[200px]">Description</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="bg-slate-100">
-            <td class="p-3 border border-slate-300">Bronze</td>
-            <td class="p-3 border border-slate-300">10 hours (Recurring)</td>
-            <td class="p-3 border border-slate-300 truncate">Entry-level support for starting your security journey</td>
+        <tbody class="block md:table-row-group">
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Bronze</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">10 hours (Recurring)</td>
+            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Entry-level support for starting your security journey</td>
           </tr>
-          <tr class="bg-slate-100">
-            <td class="p-3 border border-slate-300">Silver</td>
-            <td class="p-3 border border-slate-300">16 hours (Recurring)</td>
-            <td class="p-3 border border-slate-300 truncate">Moderate support for growing cybersecurity needs</td>
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Silver</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">16 hours (Recurring)</td>
+            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Moderate support for growing cybersecurity needs</td>
           </tr>
-          <tr class="bg-slate-100">
-            <td class="p-3 border border-slate-300">Gold</td>
-            <td class="p-3 border border-slate-300">24 hours (Recurring)</td>
-            <td class="p-3 border border-slate-300 truncate">Comprehensive support for advanced security programs</td>
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Gold</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">24 hours (Recurring)</td>
+            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Comprehensive support for advanced security programs</td>
           </tr>
         </tbody>
       </table>
