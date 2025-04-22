@@ -9,14 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Custom styles for mobile table labels */
-    .mobile-table-label::before {
-      content: attr(data-label);
-      font-weight: bold;
-      display: inline-block;
-      width: 100px;
-      margin-right: 8px;
-    }
     /* Ensure table headers are not bold */
     thead th {
       font-weight: 400 !important;
@@ -137,19 +129,19 @@
         </thead>
         <tbody class="block md:table-row-group">
           <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
-            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Bronze</td>
-            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">10 hours (Recurring)</td>
-            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Entry-level support for starting your security journey</td>
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">Bronze</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">10 hours (Recurring)</td>
+            <td data-label="Description: " class    <td class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Entry-level support for starting your security journey</td>
           </tr>
           <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
-            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Silver</td>
-            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">16 hours (Recurring)</td>
-            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Moderate support for growing cybersecurity needs</td>
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">Silver</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">16 hours (Recurring)</td>
+            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Moderate support for growing cybersecurity needs</td>
           </tr>
           <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
-            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">Gold</td>
-            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300 mobile-table-label">24 hours (Recurring)</td>
-            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300 mobile-table-label">Comprehensive support for advanced security programs</td>
+            <td data-label="Plan: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">Gold</td>
+            <td data-label="Hours: " class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">24 hours (Recurring)</td>
+            <td data-label="Description: " class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Comprehensive support for advanced security programs</td>
           </tr>
         </tbody>
       </table>
