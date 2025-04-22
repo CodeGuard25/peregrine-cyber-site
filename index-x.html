@@ -17,6 +17,10 @@
       width: 100px;
       margin-right: 8px;
     }
+    /* Ensure table headers are not bold */
+    th {
+      font-weight: normal !important;
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
@@ -66,7 +70,7 @@
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2">Basic Hygiene</h3>
         <p class="mb-2 font-semibold">Milestone: Establish Basic Hygiene</p>
-        <ul class="list-disc ml-6 text-sm mb-4 min-h-[240px]">
+        <ul class="list-disc ml-6 text-sm mb-4 min-h-[260px]">
           <li>Initial risk identification and priority setting</li>
           <li>Review of core tools (e.g., endpoint protection, firewall basics)</li>
           <li>Backup configuration guidance</li>
@@ -83,7 +87,7 @@
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2">Advanced Protection</h3>
         <p class="mb-2 font-semibold">Milestone: Strengthen Protection and Detection</p>
-        <ul class="list-disc ml-6 text-sm mb-4 min-h-[240px]">
+        <ul class="list-disc ml-6 text-sm mb-4 min-h-[260px]">
           <li>Includes Basic Hygiene plus:</li>
           <li>SIEM/log monitoring guidance (starter)</li>
           <li>EDR - Endpoint Detection and Response guidance</li>
@@ -101,7 +105,7 @@
       <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
         <h3 class="text-xl font-bold text-teal-600 mb-2">Sustained Resilience</h3>
         <p class="mb-2 font-semibold">Milestone: Mature and Sustain Your Security Program</p>
-        <ul class="list-disc ml-6 text-sm mb-4 min-h-[240px]">
+        <ul class="list-disc ml-6 text-sm mb-4 min-h-[260px]">
           <li>Includes Basic Hygiene + Advanced Protection plus:</li>
           <li>Support for written security policies</li>
           <li>Compliance mapping (PHI - Protected Health Information & PII - Personally Identifiable Information, etc.)</li>
@@ -122,9 +126,9 @@
       <table class="block md:table w-full border-collapse">
         <thead class="hidden md:table-header-group bg-teal-600 text-white">
           <tr>
-            <th class="p-3 text-left w-[25%] min-w-[100px] font-normal">Plan</th>
-            <th class="p-3 text-left w-[30%] min-w-[150px] font-normal">Hours/Month (Recurring)</th>
-            <th class="p-3 text-left w-[45%] min-w-[200px] font-normal">Description</th>
+            <th class="p-3 text-left w-[25%] min-w-[100px] !font-normal">Plan</th>
+            <th class="p-3 text-left w-[30%] min-w-[150px] !font-normal">Hours/Month (Recurring)</th>
+            <th class="p-3 text-left w-[45%] min-w-[200px] !font-normal">Description</th>
           </tr>
         </thead>
         <tbody class="block md:table-row-group">
