@@ -1,88 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <title>Peregrine Cyber | Small Business Cybersecurity & Advisor Services</title>
+  <meta name="description" content="Peregrine Cyber helps small businesses build cybersecurity programs with clarity — from compliance to NIST and CIS guidance. Based in Omaha, NE." />
+  <meta name="keywords" content="cybersecurity, small business security, NIST CSF, CIS Controls, risk assessments, cybersecurity advisor, vendor risk, incident response, security policies, security program development, data protection, healthcare cybersecurity, cybersecurity consulting, security awareness training, backup reviews, endpoint protection, EDR, SIEM, firewall review, phishing prevention, agriculture cybersecurity, co-op IT security, Omaha cybersecurity, Nebraska cybersecurity, HIPAA, PII, PHI, PCI, FTC" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peregrine Cyber</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Ensure table headers are not bold */
+    thead th {
+      font-weight: 400 !important;
+    }
+    /* Ensure table body cell content is not bold */
+    tbody td {
+      font-weight: 400 !important;
+    }
+    /* Alternating background for table rows */
+    tbody tr:nth-child(even) {
+      background-color: #f1f5f9;
+    }
+  </style>
 </head>
 <body class="bg-slate-50 text-gray-800 font-sans">
   <!-- Header / Hero -->
-  <header class="relative bg-white text-center py-20 px-6 shadow-md">
+  <header class="relative bg-transparent text-center py-10 px-4 shadow-md" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('header-bg.jpg'); background-size: cover; background-position: center;">
     <div class="relative z-10">
-      <h1 class="text-5xl font-extrabold tracking-wide mb-4 uppercase text-teal-600" style="font-family: 'Orbitron', sans-serif;">Peregrine Cyber</h1>
-      <h2 class="text-2xl font-semibold mb-6 font-sans">Your Co-Pilot for Small Business Security</h2>
-      <a href="#contact" class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">Schedule a Free Consultation</a>
+      <img src="Peregrine Cyber.png" alt="Peregrine Cyber Logo" class="mx-auto mb-0 w-[20rem] md:w-[30rem] lg:w-[500px]">
+      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white -mt-6 mb-6" style="font-family: 'Montserrat', sans-serif;">Your Co-Pilot for Small Business Security</h2>
+      <div class="mt-6">
+        <p class="text-lg font-semibold text-white mb-3">Book a 30-Minute Introductory Call</p>
+        <a href="https://calendly.com/steve-weston-peregrine-cyber/cyber-consultation" target="_blank" class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">Let’s Chat</a>
+      </div>
     </div>
   </header>
 
   <!-- Mission Statement -->
-  <section class="max-w-4xl mx-auto px-6 py-16">
-    <h2 class="text-2xl font-semibold text-teal-600 mb-6">Our Mission</h2>
-    <p class="mb-4">With over 30 years in IT and cybersecurity, we know how overwhelming security can feel—especially for small businesses without dedicated tech staff. Maybe you’re relying on one person, a managed service provider (MSP), or handling things yourself, and sorting through tools, vendors, and regulations like HIPAA—or whatever applies to your business—feels more confusing than helpful.</p>
-    <p class="mb-4">That’s where we come in. We’re your co-pilot, helping you see what’s important, what needs protection—whether that’s patient data, customer information, or your operations—and how to build a security program that fits your business. We use proven security frameworks like the National Institute of Standards and Technology (NIST) and the Center for Internet Security (CIS)—but we turn them into plain English and practical steps.</p>
-    <p class="mb-4">No tool overload or jargon here. You get clear assessments, realistic recommendations, and a steady partner who coordinates with your team and trusted vendors to make it happen.</p>
-    <p class="font-semibold">With Peregrine Cyber, you get more than advice—you get clarity, confidence, and a security program built for your business.</p>
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-teal-600 mb-6" style="font-family: 'Montserrat', sans-serif;">Our Mission</h2>
+    <p class="mb-4">With over 30 years in IT and cybersecurity, we know how overwhelming security can feel for small businesses—especially without a dedicated tech team. You might rely on one person, an MSP, or handle it yourself, but sorting through tools, vendors, cyber insurance requirements—or whatever applies—can feel more confusing than helpful.</p>
+    <p class="mb-4">That’s where we come in. As your cybersecurity advisor, we help you make sense of the chaos—translating industry frameworks like the National Institute of Standards and Technology (NIST) and the Center for Internet Security (CIS) into everyday guidance. Together, we’ll build a security program that works for your business, your budget, and your risk appetite.</p>
+    <p class="text-center font-semibold mt-2">With Peregrine Cyber, you gain clarity, confidence, and an actionable roadmap—without the jargon.</p>
   </section>
 
   <!-- Packages Section -->
-  <section class="bg-white py-16 px-6 text-gray-700">
-    <h2 class="text-2xl font-semibold text-teal-600 text-center mb-12">Monthly Security Partner Packages</h2>
-    <p class="max-w-3xl mx-auto text-center mb-6">
-      Our security partner service provides a trusted co-pilot for your business — someone who works alongside you to assess, build, and manage your cybersecurity program.
-    </p>
-    <p class="max-w-3xl mx-auto text-center mb-10">
-      Whether you're aligning with compliance frameworks, developing policies, navigating vendor relationships, or managing audits — we guide the process with strategic oversight and practical insight.
-      These packages are built for the long game: cybersecurity is not a one-time fix, it’s an ongoing effort that evolves with your business. It’s not just about the security tools — it’s about building awareness into your everyday operations — helping you and your team become the first line of defense against evolving risks.
-    </p>
+  <section class="bg-white pt-20 pb-16 px-6 text-gray-700">
+    <h2 class="text-2xl font-semibold text-teal-600 text-center mb-12" style="font-family: 'Montserrat', sans-serif;">Cybersecurity Maturity Path</h2>
+    <p class="max-w-5xl mx-auto text-center mb-8">Our packages provide ongoing support to build and manage a NIST and CIS-aligned security program, with clear milestones to guide your journey. Choose the level that fits your needs—each includes deliverables tailored to your business.</p>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      <!-- Bronze -->
-      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-blue-400 mb-2">Bronze</h3>
-        <p class="mb-2">10 hours/month</p>
-        <p>All the benefits of our security support in a steady cadence — ideal for smaller environments or organizations just getting started.</p>
-      </div>
-      <!-- Silver -->
-      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-blue-400 mb-2">Silver</h3>
-        <p class="mb-2">16 hours/month</p>
-        <p>Same service, more dedicated time. Great for businesses that want more flexibility across meetings, documentation, or review cycles.</p>
-      </div>
-      <!-- Gold -->
-      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
-        <h3 class="text-xl font-bold text-blue-400 mb-2">Gold</h3>
-        <p class="mb-2">24 hours/month</p>
-        <p>The same trusted guidance with even more availability — perfect for ongoing collaboration, fast-moving initiatives, or broader team engagement.</p>
+    <!-- Snapshot Package -->
+    <div class="md:w-1/3 md:mx-auto w-full px-6 mb-6">
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6 px-4">
+        <h3 class="text-xl font-bold text-teal-600 mb-2">Snapshot Package: 2-Hour Introductory Assessment</h3>
+        <p class="mb-4 font-semibold">Milestone: Get a high-level snapshot of your current security posture</p>
+        <p class="mb-2">Duration: 2 hours, one-time engagement</p>
+        <p class="mb-2"><em>What’s Included:</em></p>
+        <ul class="list-disc ml-8 text-sm mb-4">
+          <li>A guided walkthrough of your key risk categories using simplified NIST CSF 2.0 and CIS benchmarks</li>
+          <li>Quick-hit gap identification based on your answers and existing tools/processes</li>
+          <li>Plain-English recommendations for next steps (e.g. whether to move into Basic Hygiene, Advanced Protection or Sustained Resilience)</li>
+          <li>Review of support hours tailored to your business needs</li>
+          <li>A 1–2 page high-level report summarizing gaps and recommendations in plain language</li>
+        </ul>
       </div>
     </div>
-    <p class="text-center mt-10 text-gray-600">All packages are recurring and fully flexible — because a secure business isn’t built in a day.</p>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto align-top">
+      <!-- Basic Hygiene -->
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+        <h3 class="text-xl font-bold text-teal-600 mb-2">Basic Hygiene</h3>
+        <p class="mb-2 font-semibold">Milestone: Establish Basic Hygiene</p>
+        <p class="font-semibold text-sm mt-4 mb-2">Risk Assessment</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Initial risk identification and priority setting</li>
+          <li>Monthly vulnerability reviews</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Tools & Protection</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Review of core tools (e.g., endpoint protection, firewall basics)</li>
+          <li>Backup configuration guidance</li>
+          <li>Infrastructure Review</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Policies & Access</p>
+        <ul class="list-disc ml-6 text-sm mb-4">
+          <li>Basic access and credential review</li>
+          <li>Review of acceptable use and password policies</li>
+          <li>Support for coordination with IT/MSP as needed</li>
+        </ul>
+        <p class="text-sm italic mt-2">Aligns with CIS IG1 and NIST CSF Identify & Protect.</p>
+      </div>
+
+      <!-- Advanced Protection -->
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+        <h3 class="text-xl font-bold text-teal-600 mb-2">Advanced Protection</h3>
+        <p class="mb-2 font-semibold">Milestone: Strengthen Protection and Detection</p>
+        <p class="font-semibold text-sm mt-4 mb-2">Enhanced Tools</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Includes Basic Hygiene plus:</li>
+          <li>SIEM/log monitoring guidance (starter)</li>
+          <li>EDR - Endpoint Detection and Response guidance</li>
+          <li>Email Security Review</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Training & Awareness</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Security awareness training</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Policies & Reporting</p>
+        <ul class="list-disc ml-6 text-sm mb-4">
+          <li>Access management policy planning</li>
+          <li>Vendor security reviews</li>
+          <li>Security Architecture Review</li>
+          <li>Security reporting for internal use</li>
+        </ul>
+        <p class="text-sm italic mt-2">Aligns with CIS IG2 and NIST CSF Detect & Respond.</p>
+      </div>
+
+      <!-- Sustained Resilience -->
+      <div class="bg-slate-100 border border-slate-300 rounded-lg p-6">
+        <h3 class="text-xl font-bold text-teal-600 mb-2">Sustained Resilience</h3>
+        <p class="mb-2 font-semibold">Milestone: Mature and Sustain Your Security Program</p>
+        <p class="font-semibold text-sm mt-4 mb-2">Advanced Policies</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Includes Basic Hygiene + Advanced Protection plus:</li>
+          <li>Support for written security policies</li>
+          <li>Compliance mapping (PHI - Protected Health Information & PII - Personally Identifiable Information, etc.)</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Incident Preparedness</p>
+        <ul class="list-disc ml-6 text-sm mb-2">
+          <li>Incident response tabletop (annual)</li>
+          <li>Testing coordination (e.g., pentest, phishing)</li>
+        </ul>
+        <p class="font-semibold text-sm mt-4 mb-2">Ongoing Management</p>
+        <ul class="list-disc ml-6 text-sm mb-4">
+          <li>Executive risk reporting</li>
+          <li>Recurring policy and control review</li>
+        </ul>
+        <p class="text-sm italic mt-2">Aligns with CIS IG3 and NIST CSF Respond & Recover.</p>
+      </div>
+    </div>
+
+    <!-- Clarifying Note -->
+    <div class="max-w-6xl mx-auto text-center mt-8 p-4 bg-teal-50 border border-teal-200 rounded">
+      <p class="text-lg font-semibold text-teal-600">Start with our Snapshot Package for a 2-hour assessment of your security posture, or pair a Maturity Package (Basic Hygiene, Advanced Protection, or Sustained Resilience) with a Bronze, Silver, or Gold Support Plan to progress at your pace—more hours mean faster results toward your security goals.</p>
+    </div>
+
+    <!-- Support Plans Subheading -->
+    <h3 class="text-xl font-semibold text-teal-600 text-center mt-12 mb-6" style="font-family: 'Montserrat', sans-serif;">Choose Your Support Plan</h3>
+
+    <!-- Support Plans Table -->
+    <div class="max-w-6xl mx-auto mt-8">
+      <table class="block md:table w-full border-collapse">
+        <thead class="hidden md:table-header-group bg-teal-600 text-white">
+          <tr>
+            <th class="p-3 text-left w-[25%] min-w-[100px] !font-normal" style="font-weight: 400;">Plan</th>
+            <th class="p-3 text-left w-[30%] min-w-[150px] !font-normal" style="font-weight: 400;">Hours/Month (Recurring)</th>
+            <th class="p-3 text-left w-[45%] min-w-[200px] !font-normal" style="font-weight: 400;">Description</th>
+          </tr>
+        </thead>
+        <tbody class="block md:table-row-group">
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300"><span class="inline-block w-4 h-4 bg-amber-600 rounded-full mr-2"></span>Bronze</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">10 hours (Recurring)</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Entry-level support for starting your security journey</td>
+          </tr>
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300"><span class="inline-block w-4 h-4 bg-gray-400 rounded-full mr-2"></span>Silver</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">16 hours (Recurring)</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Moderate support for growing cybersecurity needs</td>
+          </tr>
+          <tr class="block md:table-row border border-slate-300 mb-4 md:mb-0 bg-slate-100">
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300"><span class="inline-block w-4 h-4 bg-yellow-400 rounded-full mr-2"></span>Gold</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 border-b md:border border-slate-300">24 hours (Recurring)</td>
+            <td class="block md:table-cell text-sm md:text-base p-3 md:truncate border-b md:border border-slate-300">Comprehensive support for advanced security programs</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="bg-teal-600 py-16 px-6 text-white">
-    <h2 class="text-2xl font-semibold text-white text-center mb-6">Let’s Talk Security</h2>
-    <p class="text-white text-center mb-8">Whether you're facing a compliance challenge, sorting out vendor issues, or just unsure what to focus on — our free consultation is a chance to talk through the problem in plain language and figure out what makes sense for your business.</p>
-    <form action="https://formsubmit.co/steve.weston@peregrine-cyber.com" method="POST" class="max-w-xl mx-auto grid gap-4">
+    <h2 class="text-2xl font-semibold text-white text-center mb-6" style="font-family: 'Montserrat', sans-serif;">Let’s Talk Security</h2>
+    <p class="text-white text-center mb-4">We’re based in Omaha, Nebraska, and understand the unique challenges small businesses face here—especially in industries like healthcare and professional services. Omaha’s tight-knit business community means we know the local risks—like confusing cybersecurity insurance questions and compliance specific to your business. Not sure what you need? Let’s talk through your goals and see if our services are a good fit. Security maturity takes time—progress depends on your goals and readiness.</p>
+    <form action="https://formsubmit.co/info@peregrine-cyber.com" method="POST" class="max-w-xl mx-auto grid gap-4">
       <input type="hidden" name="_next" value="https://peregrine-cyber-site.pages.dev/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Name" class="p-3 rounded text-black bg-white" required />
-      <input type="email" name="email" placeholder="Email" class="p-3 rounded text-black bg-white" required />
-      <input type="text" name="company" placeholder="Company (optional)" class="p-3 rounded text-black bg-white" />
-      <textarea name="message" placeholder="Message" rows="4" class="p-3 rounded text-black bg-white" required></textarea>
-      <button type="submit" class="bg-white text-teal-700 font-semibold py-3 px-6 rounded hover:bg-slate-100">Book Free Consultation</button>
+      <label for="name" class="text-sm">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" class="p-3 rounded text-black bg-white" required />
+      <label for="email" class="text-sm">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" class="p-3 rounded text-black bg-white" required />
+      <label for="company" class="text-sm">Company (optional)</label>
+      <input type="text" id="company" name="company" placeholder="Company (optional)" class="p-3 rounded text-black bg-white" />
+      <label for="message" class="text-sm">Message</label>
+      <textarea id="message" name="message" placeholder="Message" rows="4" class="p-3 rounded text-black bg-white" required></textarea>
+      <button type="submit" class="bg-white text-teal-600 font-semibold py-3 px-6 rounded hover:bg-slate-100">Send Us Your Questions</button>
     </form>
-  </section>
-
-  <!-- Local Focus (Moved to Bottom) -->
-  <section class="max-w-4xl mx-auto px-6 py-12 text-black">
-    <p class="mb-4 text-center">We’re based in Omaha, Nebraska, and understand the unique challenges small businesses face — especially in industries like healthcare and professional services. Whether you're navigating HIPAA, insurance requirements, or just unsure where to begin, we’re here to guide you without the jargon.</p>
+    <p class="text-white text-center mt-6">Or call us: <a href="tel:+14028776701" class="underline hover:text-teal-200">(402) 877-6701</a></p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-slate-100 text-center text-gray-600 text-sm py-6">
-    &copy; 2025 Peregrine Cyber. All rights reserved.
+    © 2025 Peregrine Cyber. All rights reserved.
   </footer>
 </body>
 </html>
